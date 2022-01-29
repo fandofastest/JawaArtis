@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_searchBtn"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/play_next"
+        android:title="Play Next"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/add_to_playlist"
+        android:title="Add to Playlist"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/add_to_queue"
+        android:title="Add to Queue"
+        app:showAsAction="never" />
+
+
+</menu>

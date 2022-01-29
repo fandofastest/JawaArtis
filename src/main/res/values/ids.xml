@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="play_musicUtils" type="id" />
+    <item name="play_next_musicUtils" type="id" />
+    <item name="add_to_queue_musicUtils" type="id" />
+    <item name="add_to_playlist_musicUtils" type="id" />
+    <item name="shuffle_play_musicUtils" type="id" />
+    <item name="info_musicUtils" type="id" />
+    <item name="remove_musicUtils" type="id" />
+    <item name="equalizer" type="id" />
+</resources>

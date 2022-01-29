@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.satux.duax.tigax.views.SquareImageView
+            android:id="@+id/grid_item_image2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/ic_launcher_round"
+            android:contentDescription="@string/app_label" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/grid_item_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="3dp"
+                android:text="@string/unknown_album"
+                android:textColor="@color/textColorTitle"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/grid_item_sublabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="6dp"
+                android:text="@string/unknown_artist"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/textColorSubTitle" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageOverflow"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/ic_dots_vert_black_24dp"
+            android:tint="@color/textColorSubTitle" />
+
+    </LinearLayout>
+
+</RelativeLayout>

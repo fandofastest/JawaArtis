@@ -1,0 +1,87 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.satux.duax.tigax"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        resConfigs "en"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    return void
+}
+
+repositories {
+    mavenCentral()
+    google()
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'androidx.core:core:1.5.0-alpha04'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.media:media:1.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.mediarouter:mediarouter:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.android.gms:play-services-ads:19.4.0'
+    implementation 'com.google.android.ump:user-messaging-platform:1.0.0'
+    implementation 'com.jenzz:materialpreference:1.3'
+    implementation('com.squareup.picasso:picasso:2.71828') {
+        exclude group: "com.android.support"
+    }
+
+    implementation 'com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:0.7.0'
+    implementation 'com.xgc1986.android:parallaxpagertransformer:1.0.3'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+
+    implementation 'com.google.android.gms:play-services-ads:20.5.0'
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    implementation 'com.applovin:applovin-sdk:+'
+    implementation 'com.applovin.mediation:facebook-adapter:+'
+}

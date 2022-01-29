@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_songs"
+        android:icon="@drawable/ic_library_music_black_24dp"
+        android:title="Top" />
+
+    <item
+        android:id="@+id/navigation_allsongs"
+        android:icon="@drawable/ic_album_black_24dp"
+        android:title="All" />
+
+    <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favorite" />
+    <item
+        android:id="@+id/navigation_playlists"
+        android:icon="@drawable/app_playlist"
+        android:title="Playlists" />
+
+</menu>

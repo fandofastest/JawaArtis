@@ -1,0 +1,51 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_searchBtn"
+        android:icon="@drawable/app_search"
+        android:orderInCategory="104"
+        android:title="@string/search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/sleep_timer"
+        android:title="Set Sleep Timer"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/changeTheme"
+        android:title="Change Theme"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sync"
+        android:title="Sync Music"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/equalizer"
+        android:title="Equalizer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/rate"
+        android:title="Rate App"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/share"
+        android:title="Share App"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/privacy"
+        android:title="Privacy Policy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/disclamer"
+        android:title="Disclaimer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="never" />
+</menu>
