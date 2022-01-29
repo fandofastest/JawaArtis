@@ -462,11 +462,12 @@
 
         </RelativeLayout>
 
-        <FrameLayout
+        <LinearLayout
             android:id="@+id/ads_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0" />
+            android:layout_height="60sp"
+            android:layout_weight="0"
+            android:orientation="horizontal" />
     </LinearLayout>
 
 </RelativeLayout>

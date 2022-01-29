@@ -149,7 +149,6 @@ public class PlayActivity extends AppCompatActivity implements OnClickListener, 
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
-        adContainerView = findViewById(R.id.ads_container);
         Ads.showBanners(PlayActivity.this,this.<LinearLayout>findViewById(R.id.ads_container));
 
 
